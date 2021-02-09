@@ -126,21 +126,15 @@ document.addEventListener('DOMContentLoaded', function () {
     setTimeout(() => {
         const conferencesContainer = document.querySelector('#conference-total');
         // CountUp arguments: element, start number, end number, decimal, duration
-        const conferenceAnimation = new CountUp('conferencesContainer', 12, 0, {
-            duration: 5,
-        });
+        const conferenceAnimation = new CountUp('conferencesContainer', 0 12, 0, 5);
         conferenceAnimation.start();
 
         const workshopsContainer = document.querySelector('#workshops-total');
-        const workshopsAnimation = new CountUp('workshopsContainer', 4, 0, {
-            duration: 3,
-        });
+        const workshopsAnimation = new CountUp('workshopsContainer', 0, 4, 0, 3);
         workshopsAnimation.start();
 
         const daysContainer = document.querySelector('#days-total');
-        const daysAnimation = new CountUp('daysContainer', 2, 0, {
-            duration: 2,
-        });
+        const daysAnimation = new CountUp('daysContainer', 0, 2, 0, 2);
         daysAnimation.start();
     }, 500);
 

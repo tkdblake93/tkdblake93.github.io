@@ -1,0 +1,432 @@
+:root {
+    /*** Custom **/
+    --font-family-sans-serif: 'Poppins', sans-serif;
+    --font-family-text: 'Roboto', sans-serif;
+    --font-family-heading: var(--font-family-sans-serif);
+    /* Colors */
+    --blue: #22abff;
+    --green: #81bc26;
+    --yellow: #e79300;
+    --purple: #8b2a74;
+    --info: #8b2a74;
+    --black: #000000;
+    --pink: #d24068;
+    --purple2: #712363;
+    --gray-dark: #4f4f4f;
+    --white: #FFFFFF;
+}
+
+body {
+    font-family: var(--font-family-text);
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+h2 {
+    font-family: var(--font-family-heading);
+    font-weight: 900;
+    color: var(--purple);
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+    h2 {
+        font-size: 4rem;
+    }
+}
+
+.py-7 {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.white-text {
+    color: var(--white);
+}
+
+.bg-gradient {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,d24068+0,d24068+0,2989d8+100,8b2a74+100 */
+    background: #1e5799;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #1e5799 0%, #d24068 0%, #d24068 0%, #2989d8 100%, #8b2a74 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #1e5799 0%, #d24068 0%, #d24068 0%, #2989d8 100%, #8b2a74 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #1e5799 0%, #d24068 0%, #d24068 0%, #2989d8 100%, #8b2a74 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#8b2a74', GradientType=0);
+    /* IE6-9 */
+}
+
+.site-header {
+    min-height: 900px;
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.main-navigation a {
+    color: var(--white);
+    font-size: 1.4rem;
+}
+
+.main-navigation a:hover {
+    color: var(--yellow);
+}
+
+.main-navigation {
+    transition: all .3s ease-in-out;
+}
+
+.main-navigation.fixed-top {
+    background: var(--purple2);
+}
+
+.main-navigation .active {
+    background: var(--yellow) !important;
+}
+
+/** Mobile Menu **/
+
+.mobile-active {
+    top: 51px;
+}
+
+@media (min-width: 768px) {
+    .mobile-active {
+        top: 0;
+    }
+}
+
+.mobile-menu i {
+    color: var(--white);
+}
+
+.mobile-menu i:hover {
+    cursor: pointer;
+}
+
+.bg-secondary {
+    background: var(--purple2) !important;
+}
+
+/** Event Info **/
+
+@media (min-width:768px) {
+    .event-info {
+        margin-top: 15rem;
+    }
+}
+
+.event-info p {
+    color: var(--white);
+    font-size: 1.8rem;
+}
+
+/** Event Numbers **/
+
+.event-numbers {
+    color: var(--white);
+}
+
+.event-numbers .display-4 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: .7;
+    padding-bottom: 1rem;
+}
+
+.event-numbers>div {
+    margin-bottom: 2rem;
+}
+
+@media (min-width:992px) {
+    .event-numbers .display-4 {
+        font-size: 6rem;
+    }
+}
+
+.event-numbers span {
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--white);
+}
+
+.event-numbers span::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.event-numbers .conferences {
+    color: var(--yellow);
+}
+
+.event-numbers .workshops {
+    color: var(--blue);
+}
+
+.event-numbers .days {
+    color: var(--green);
+}
+
+/** Buttons **/
+
+.categories .btn {
+    border-radius: 0 !important;
+    width: 100%;
+    color: var(--black);
+    background: var(--white);
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+}
+
+@media (min-width: 992px) {
+    .categories .btn {
+        width: auto;
+        margin-right: 2rem;
+    }
+    .categories .btn:last-of-type {
+        margin-right: 0;
+    }
+}
+
+.categories .btn-primary, .ecommerce-cat {
+    border-left: 10px solid var(--blue);
+}
+
+.categories .btn-warning, .wordpress-cat {
+    border-left: 10px solid var(--yellow);
+}
+
+.categories .btn-success, .web-design-cat {
+    border-left: 10px solid var(--green);
+}
+
+.categories .btn-info, .web-development-cat {
+    border-left: 10px solid var(--purple);
+}
+
+/** Conferences List **/
+
+.list-group-item .active, .list-group-item .active:hover {
+    background: var(--blue);
+    border-color: var(--blue);
+}
+
+.list-group-item:hover {
+    background: var(--white);
+}
+
+.conference-wrapper .image {
+    margin-right: 1rem;
+}
+
+.conference-info {
+    font-size: 1.2rem;
+    color: var(--black);
+}
+
+.conference-info .badge {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.conference-info .badge-primary {
+    background: var(--blue);
+}
+
+.conference-info .title, .conference-info .speaker {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.conference-info .speaker span {
+    font-weight: 300;
+}
+
+/** Speakers **/
+
+.speaker-list .speaker-image {
+    overflow: hidden;
+}
+
+.speaker-list img {
+    transition: transform .3s ease-out;
+}
+
+.speaker-list img:hover {
+    transform: scale(1.2);
+}
+
+.speaker-info h3 {
+    color: var(--yellow);
+    font-weight: 700;
+}
+
+.speaker-info p {
+    font-size: 1rem;
+}
+
+/** Gallery **/
+
+.card-img-top, .card {
+    border-radius: 0;
+}
+
+.img-thumbnail {
+    border-radius: 0;
+    border: 0;
+    padding: .5rem;
+}
+
+/** Testimonials **/
+
+.card-shadow-line {
+    -webkit-box-shadow: 0px 9px 23px -6px rgba(99, 43, 43, 0.31);
+    -moz-box-shadow: 0px 9px 23px -6px rgba(0, 0, 0, 0.31);
+    box-shadow: 0px 9px 23px -6px rgba(0, 0, 0, 0.31);
+    border-top: 10px solid var(--purple);
+}
+
+.testimonial .card-text {
+    font-size: 1rem;
+    padding-left: 3rem;
+    line-height: 2;
+    position: relative;
+}
+
+.testimonial .card-text::before {
+    content: open-quote;
+    font-family: var(--font-family-sans-serif);
+    font-size: 6rem;
+    position: absolute;
+    top: -3.8rem;
+    left: 0;
+}
+
+.testimonial .card-text::after {
+    content: no-close-quote;
+    visibility: hidden;
+}
+
+.blockquote-footer {
+    font-size: 1rem;
+    color: var(--purple);
+    font-weight: 700;
+}
+
+/** About London **/
+
+.about-london {
+    background-image: url(../img/london.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat;
+    background-position: center center; */
+}
+
+@media (min-width: 480px) {
+    .about-london-text {
+        column-count: 2;
+    }
+}
+
+/** Tickets **/
+
+.tickets .card-header {
+    background: var(--white);
+    border: none;
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: var(--purple);
+    padding-top: 1rem;
+}
+
+.tickets .card-body {
+    font-size: 1rem;
+}
+
+.tickets .price {
+    color: var(--purple);
+    font-family: var(--font-family-sans-serif);
+    font-weight: 600;
+}
+
+.tickets .btn-danger {
+    background: var(--pink) !important;
+    font-size: 1.6rem;
+}
+
+/** Footer & Social Network **/
+
+.site-footer {
+    background: var(--purple);
+}
+
+.inner-footer {
+    min-height: 400px;
+    background-image: url(../img/graphic.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+.copyright {
+    color: var(--white);
+    background: var(--purple2);
+}
+
+.social-navigation a::before {
+    font-family: "Font Awesome 5 Brands";
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.6rem;
+}
+
+.social-navigation a {
+    background: var(--pink);
+    border-radius: 50%;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    padding-top: 10px;
+    text-align: center;
+    color: var(--white);
+    margin-right: 2rem;
+    transition: background .3s ease-in-out;
+}
+
+.social-navigation a:last-of-type {
+    margin-right: 0;
+}
+
+.social-navigation a:hover {
+    background: var(--purple2);
+}
+
+.social-navigation a[href*='facebook.com']::before {
+    content: '\f39e';
+}
+
+.social-navigation a[href*='twitter.com']::before {
+    content: '\f099';
+}
+
+.social-navigation a[href*='youtube.com']::before {
+    content: '\f167';
+}
+
+.social-navigation a[href*='instagram.com']::before {
+    content: '\f16d';
+}
+
+.social-navigation a[href*='pinterest.com']::before {
+    content: '\f0d2';
+}

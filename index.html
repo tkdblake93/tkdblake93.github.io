@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce + Web Design Conference 2018</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900|Roboto:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-spy="scroll" data-target=".main-navigation">
+    <header class="site-header">
+        <div class="container">
+            <div class="mobile-menu d-md-none d-flex justify-content-center bg-secondary fixed-top">
+                <i class="fas fa-ellipsis-v py-3 px-4"></i>
+            </div>
+            <nav class="nav nav-pills justify-content-center flex-column flex-md-row text-center pt-0 pt-md-5 main-navigation d-none d-md-flex">
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#workshops" class="nav-item nav-link">Workshops &amp; Conferences</a>
+                <a href="#speakers" class="nav-item nav-link">Speakers</a>
+                <a href="#tickets" class="nav-item nav-link">Tickets</a>
+            </nav>
+
+            <div class="row justify-content-center align-items-center mt-5 mt-md-0">
+                <div class="col-md-8 pt-5 pt-md-0">
+                    <div class="event-info">
+                        <img class="img-fluid" src="img/logo.svg" alt="Ecommerce + Web Design Conference logo">
+                        <p class="text-center text-lg-right"><i class="fas fa-map-marker-alt"></i> London &ndash;
+                            December 9th&ndash;10th 2018</p>
+                    </div>
+                </div><!-- /.col-md-8 -->
+                <div class="col-md-8">
+                    <div class="row event-numbers text-center my-5 my-md-0">
+                        <div class="col-lg-4">
+                            <p class="m-0">
+                                <span id="conference-total" class="conferences display-4"></span>
+                                <span>Conferences</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-4">
+                            <p class="m-0">
+                                <span id="workshops-total" class="workshops display-4"></span>
+                                <span>Workshops</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-4">
+                            <p class="m-0">
+                                <span id="days-total" class="days display-4"></span>
+                                <span>Days</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.row -->
+        </div>
+    </header>
+
+    <section id="about" class="about container py-7">
+        <div class="row justify-content-center">
+            <div class="col-10 text-center">
+                <h2 class="mb-3">About the Conference</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae animi natus tempore officiis
+                    aut perspiciatis est explicabo saepe adipisci quae, obcaecati maiores molestiae! Ad impedit, sequi
+                    quibusdam tempora eum illum.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="workshops" class="conferences-list bg-gradient py-7">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="white-text">Conferences &amp; Workshops</h2>
+                    <p class="white-text mt-3">Filter By Category:</p>
+                </div>
+                <div class="col-12">
+                    <nav class="nav nav-pills nav-fill mt-3 categories">
+                        <button data-filter="all" class="nav-item nav-link btn btn-danger">All</button>
+                        <button data-filter=".ecommerce-cat" class="nav-item nav-link btn btn-primary">E-Commerce</button>
+                        <button data-filter=".wordpress-cat" class="nav-item nav-link btn btn-warning">WordPress</button>
+                        <button data-filter=".web-design-cat" class="nav-item nav-link btn btn-success">Web Design</button>
+                        <button data-filter=".web-development-cat" class="nav-item nav-link btn btn-info">Web Development</button>
+                    </nav>
+                </div>
+                <div class="col-lg-6">
+                    <div id="day1" class="list-group mt-5">
+                        <div class="list-group-item list-group-item-action active text-center heading">
+                            Day 1 - December 9
+                        </div>
+
+                    </div><!-- /.list-group -->
+                </div><!-- /.col-lg-6 -->
+
+                <div class="col-lg-6">
+                    <div id="day2" class="list-group mt-5">
+                        <div class="list-group-item list-group-item-action active text-center heading">
+                            Day 2 - December 10
+                        </div>
+
+                    </div><!-- /.list-group -->
+                </div><!-- /.col-lg-6 -->
+
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
+
+    <section id="speakers" class="pt-5">
+        <h2 class="mb-5 text-center">2018 Speakers</h2>
+        <ul class="row speaker-list list-unstyled no-gutters">
+            <!-- speakersTemplate() -->
+        </ul>
+    </section>
+
+    <section class="gallery bg-gradient py-7">
+        <h2 class="white-text text-center mb-5">The Gallery</h2>
+        <div class="container">
+            <div class="card-columns">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img data-toggle="modal" data-target="#gallery1" class="img-thumbnail" src="img/gallery1.jpg"
+                            alt="Image from previous years">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-top">
+                        <img data-toggle="modal" data-target="#gallery2" class="img-thumbnail" src="img/gallery2.jpg"
+                            alt="Image from previous years">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-top">
+                        <img data-toggle="modal" data-target="#gallery3" class="img-thumbnail" src="img/gallery3.jpg"
+                            alt="Image from previous years">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-top">
+                        <img data-toggle="modal" data-target="#gallery4" class="img-thumbnail" src="img/gallery4.jpg"
+                            alt="Image from previous years">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-top">
+                        <img data-toggle="modal" data-target="#gallery5" class="img-thumbnail" src="img/gallery5.jpg"
+                            alt="Image from previous years">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-top">
+                        <img data-toggle="modal" data-target="#gallery6" class="img-thumbnail" src="img/gallery6.jpg"
+                            alt="Image from previous years">
+                    </div>
+                </div>
+            </div>
+            <!-- Begin Modals -->
+            <div class="modal fade" id="gallery1" tabindex="-1" role="dialog" aria-labelledby="galleryImage"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="img/gallery1_full.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="gallery2" tabindex="-1" role="dialog" aria-labelledby="galleryImage"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="img/gallery2_full.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="gallery3" tabindex="-1" role="dialog" aria-labelledby="galleryImage"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="img/gallery3_full.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="gallery4" tabindex="-1" role="dialog" aria-labelledby="galleryImage"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="img/gallery4_full.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="gallery5" tabindex="-1" role="dialog" aria-labelledby="galleryImage"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="img/gallery5_full.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="gallery6" tabindex="-1" role="dialog" aria-labelledby="galleryImage"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="img/gallery6_full.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Modals -->
+        </div>
+    </section>
+
+    <section class="testimonials container py-7">
+        <h2 class="text-center mb-5">Testimonials</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card testimonial card-shadow-line">
+                    <div class="card-body">
+                        <blockquote>
+                            <p class="card-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nostrum eius amet
+                                exercitationem, laborum recusandae aliquid mollitia, assumenda, earum dolorem
+                                reprehenderit quasi sit? Quos adipisci, non quaerat commodi animi qui.
+                            </p>
+                        </blockquote>
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <footer class="blockquote-footer">Lisa Peterson</footer>
+                            </div>
+                            <div class="col-4">
+                                <img src="img/testimonial.jpg" class="rounded-circle img-fluid">
+                            </div><!-- /.col-4 -->
+                        </div><!-- /.row -->
+                    </div><!-- /.card-body -->
+                </div><!-- /.card -->
+            </div><!-- /.col-md-4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card testimonial card-shadow-line">
+                    <div class="card-body">
+                        <blockquote>
+                            <p class="card-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nostrum eius amet
+                                exercitationem, laborum recusandae aliquid mollitia, assumenda, earum dolorem
+                                reprehenderit quasi sit? Quos adipisci, non quaerat commodi animi qui.
+                            </p>
+                        </blockquote>
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <footer class="blockquote-footer">Lisa Peterson</footer>
+                            </div>
+                            <div class="col-4">
+                                <img src="img/testimonial.jpg" class="rounded-circle img-fluid">
+                            </div><!-- /.col-4 -->
+                        </div><!-- /.row -->
+                    </div><!-- /.card-body -->
+                </div><!-- /.card -->
+            </div><!-- /.col-md-4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card testimonial card-shadow-line">
+                    <div class="card-body">
+                        <blockquote>
+                            <p class="card-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nostrum eius amet
+                                exercitationem, laborum recusandae aliquid mollitia, assumenda, earum dolorem
+                                reprehenderit quasi sit? Quos adipisci, non quaerat commodi animi qui.
+                            </p>
+                        </blockquote>
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <footer class="blockquote-footer">Lisa Peterson</footer>
+                            </div>
+                            <div class="col-4">
+                                <img src="img/testimonial.jpg" class="rounded-circle img-fluid">
+                            </div><!-- /.col-4 -->
+                        </div><!-- /.row -->
+                    </div><!-- /.card-body -->
+                </div><!-- /.card -->
+            </div><!-- /.col-md-4 -->
+        </div>
+    </section>
+
+    <section class="about-london py-7">
+        <div class="container">
+            <h2 class="text-center white-text mb-5">About London</h2>
+            <div class="about-london-text white-text mt-4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet doloremque ut corrupti! Ad, incidunt
+                    dicta laborum dolorem itaque omnis est amet impedit voluptate aspernatur nesciunt eius vitae, id
+                    voluptates doloribus?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit tenetur consequuntur quas nihil,
+                    veritatis alias iste impedit quia aut, debitis voluptates repudiandae dolore dignissimos ut a sed
+                    ipsa? Iusto, eveniet.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tickets" class="container tickets py-7">
+        <h2 class="text-center mb-5">Select Your Tickets</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card ticket card-shadow-line">
+                    <div class="card-header">Saturday</div>
+                    <div class="card-body">
+                        <p class="card-text">Includes access to any conference or workshop on Saturday</p>
+                        <p class="price text-center display-4">$99</p>
+                        <a href="#" class="btn btn-danger d-block text-uppercase">Select</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card ticket card-shadow-line">
+                    <div class="card-header">Premium</div>
+                    <div class="card-body">
+                        <div class="text-muted">2 Days</div>
+                        <p class="card-text">Includes lodging + dinner with conference presenters &amp; access to any
+                            conference or workshop</p>
+                        <p class="price text-center display-4">$199</p>
+                        <a href="#" class="btn btn-danger d-block text-uppercase">Select</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card ticket card-shadow-line">
+                    <div class="card-header">Sunday</div>
+                    <div class="card-body">
+                        <p class="card-text">Includes access to any conference or workshop on Sunday</p>
+                        <p class="price text-center display-4">$99</p>
+                        <a href="#" class="btn btn-danger d-block text-uppercase">Select</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer pt-5">
+        <div class="inner-footer">
+            <nav class="social-navigation d-flex justify-content-center">
+                <a href="https://facebook.com/">
+                    <span class="sr-only">Facebook</span>
+                </a>
+                <a href="https://twitter.com/">
+                    <span class="sr-only">Twitter</span>
+                </a>
+                <a href="https://youtube.com/">
+                    <span class="sr-only">YouTube</span>
+                </a>
+                <a href="https://instagram.com/">
+                    <span class="sr-only">Instagram</span>
+                </a>
+                <a href="https://pinterest.com/">
+                    <span class="sr-only">Pinterest</span>
+                </a>
+            </nav>
+        </div>
+        <p class="text-center m-0 copyright p-3">
+            <span class="text-uppercase font-weight-bold">E-Commerce + Web Design Conference</span>
+            All Rights Reserved 2018.
+        </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/countUp.min.js" type="module"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

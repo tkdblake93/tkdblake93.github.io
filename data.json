@@ -1,0 +1,187 @@
+{
+    "speakers": [
+        {
+            "name" : "Jessie Pearson",
+            "description" : "WordPress Developer"
+        },
+        {
+            "name" : "Andy Griffin",
+            "description" : "Magento & Prestashop Developer"
+        },
+        {
+            "name" : "Carmen Gonzalez",
+            "description" : "CSSGrid & Flexbox Specialist"
+        },
+        {
+            "name" : "Andres Grant",
+            "description" : "UX & UI Expert"
+        },
+        {
+            "name" : "Bethany Parks",
+            "description" : "WooCommerce Expert"
+        },
+        {
+            "name" : "Julius Smith",
+            "description" : "JavaScript Developer"
+        },
+        {
+            "name" : "Olivia Clayton",
+            "description" : "HTML5 Developer"
+        },
+        {
+            "name" : "Karl Miller",
+            "description" : "SVG Animations"
+        }
+    ],
+    "conferences" : {
+        "day1" : [
+            {
+                "time" : "11:00 - 12:00",
+                "title" : "SVG Animations for your Website",
+                "description" : "Proin venenatis non elit sed fermentum. Pellentesque interdum fringilla ex id finibus. Mauris et fermentum dui.",
+                "category" : "web-design",
+                "workshop" : 0,
+                "speaker" : "Karl Miller",
+                "speaker_id" : 8
+            },
+            {
+                "time" : "11:00 - 14:00",
+                "title" : "Building your first Website",
+                "description" : "Proin venenatis non elit sed fermentum. Pellentesque interdum fringilla ex id finibus. Mauris et fermentum dui.",
+                "category" : "web-design",
+                "workshop" : 1,
+                "speaker" : "Olivia Clayton",
+                "speaker_id" : 7
+            },
+            {
+                "time" : "12:00 - 13:00",
+                "title" : "WooCommerce for Beginners",
+                "description" : "Proin venenatis non elit sed fermentum. Pellentesque interdum fringilla ex id finibus. Mauris et fermentum dui.",
+                "category" : "ecommerce",
+                "workshop" : 0,
+                "speaker" : "Bethany Parks",
+                "speaker_id" : 5
+            },
+            {
+                "time" : "13:00 - 14:00",
+                "title" : "WordPress for Small Business",
+                "description" : "Proin venenatis non elit sed fermentum. Pellentesque interdum fringilla ex id finibus. Mauris et fermentum dui.",
+                "category" : "wordpress",
+                "workshop" : 0,
+                "speaker" : "Jessie Pearson",
+                "speaker_id" : 1
+            },
+            {
+                "time" : "14:00 - 15:00",
+                "title" : "You don't need Shopify",
+                "description" : "Proin venenatis non elit sed fermentum. Pellentesque interdum fringilla ex id finibus. Mauris et fermentum dui.",
+                "category" : "ecommerce",
+                "workshop" : 0,
+                "speaker" : "Andy Griffin",
+                "speaker_id" : 2
+            },
+            {
+                "time" : "14:00 - 17:00",
+                "title" : "Introduction to ReactJS",
+                "description" : "Proin venenatis non elit sed fermentum. Pellentesque interdum fringilla ex id finibus. Mauris et fermentum dui.",
+                "category" : "web-development",
+                "workshop" : 1,
+                "speaker" : "Julius Smith",
+                "speaker_id" : 6
+            },
+            {
+                "time" : "15:00 - 16:00",
+                "title" : "UX & UI for Your Site",
+                "description" : "Proin venenatis non elit sed fermentum. Pellentesque interdum fringilla ex id finibus. Mauris et fermentum dui.",
+                "category" : "web-design",
+                "workshop" : 0,
+                "speaker" : "Andres Grant",
+                "speaker_id" : 4
+            },
+            {
+                "time" : "16:00 - 17:00",
+                "title" : "The future of CSS",
+                "description" : "Proin venenatis non elit sed fermentum. Pellentesque interdum fringilla ex id finibus. Mauris et fermentum dui.",
+                "category" : "web-design",
+                "workshop" : 0,
+                "speaker" : "Carmen Gonzalez",
+                "speaker_id" : 3
+            }
+        ],
+        "day2" : [
+            {
+                "time" : "11:00 - 12:00",
+                "title" : "Responsive Images",
+                "description" : "Proin venenatis non elit sed fermentum. Pellentesque interdum fringilla ex id finibus. Mauris et fermentum dui.",
+                "category" : "web-design",
+                "workshop" : 0,
+                "speaker" : "Olivia Clayton",
+                "speaker_id" : 7
+            },
+            {
+                "time" : "11:00 - 14:00",
+                "title" : "Building a Website with CSS Grid",
+                "description" : "Proin venenatis non elit sed fermentum. Pellentesque interdum fringilla ex id finibus. Mauris et fermentum dui.",
+                "category" : "web-design",
+                "workshop" : 1,
+                "speaker" : "Carmen Gonzalez",
+                "speaker_id" : 3
+            },
+            {
+                "time" : "12:00 - 13:00",
+                "title" : "Choosing a JS Framework",
+                "description" : "Proin venenatis non elit sed fermentum. Pellentesque interdum fringilla ex id finibus. Mauris et fermentum dui.",
+                "category" : "ecommerce",
+                "workshop" : 0,
+                "speaker" : "Julius Smith",
+                "speaker_id" : 6
+            },
+            {
+                "time" : "13:00 - 14:00",
+                "title" : "Optimize your Store to sell more",
+                "description" : "Proin venenatis non elit sed fermentum. Pellentesque interdum fringilla ex id finibus. Mauris et fermentum dui.",
+                "category" : "ecommerce",
+                "workshop" : 0,
+                "speaker" : "Andy Griffin",
+                "speaker_id" : 2
+            },
+            {
+                "time" : "14:00 - 15:00",
+                "title" : "WordPress Security and Performance",
+                "description" : "Proin venenatis non elit sed fermentum. Pellentesque interdum fringilla ex id finibus. Mauris et fermentum dui.",
+                "category" : "wordpress",
+                "workshop" : 0,
+                "speaker" : "Jessie Pearson",
+                "speaker_id" : 1
+            },
+            {
+                "time" : "14:00 - 17:00",
+                "title" : "Advanced SVG Animations",
+                "description" : "Proin venenatis non elit sed fermentum. Pellentesque interdum fringilla ex id finibus. Mauris et fermentum dui.",
+                "category" : "web-design",
+                "workshop" : 1,
+                "speaker" : "Karl Miller",
+                "speaker_id" : 8
+            },
+            {
+                "time" : "15:00 - 16:00",
+                "title" : "5 Plugins for your WooCommerce Store",
+                "description" : "Proin venenatis non elit sed fermentum. Pellentesque interdum fringilla ex id finibus. Mauris et fermentum dui.",
+                "category" : "ecommerce",
+                "workshop" : 0,
+                "speaker" : "Bethany Parks",
+                "speaker_id" : 5
+            },
+            {
+                "time" : "16:00 - 17:00",
+                "title" : "Choosing Fonts for your Website",
+                "description" : "Proin venenatis non elit sed fermentum. Pellentesque interdum fringilla ex id finibus. Mauris et fermentum dui.",
+                "category" : "web-design",
+                "workshop" : 0,
+                "speaker" : "Andres Grant",
+                "speaker_id" : 4
+            }
+        ]
+    }
+}
+

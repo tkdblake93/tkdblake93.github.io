@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function () {
     setTimeout(() => {
         const conferencesContainer = document.querySelector('#conference-total');
         // CountUp arguments: element, start number, end number, decimal, duration
-        const conferenceAnimation = new CountUp('conferencesContainer', 0 12, 0, 5);
+        const conferenceAnimation = new CountUp('conferencesContainer', 0, 12, 0, 5);
         conferenceAnimation.start();
 
         const workshopsContainer = document.querySelector('#workshops-total');
